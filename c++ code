@@ -1,0 +1,41 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char op;
+    float num1,num2;
+    
+    cout<<"enter operator + or - or * or /:";
+    cin>>op;
+    cout<<"enter two operators:";
+    cin>>num1>>num2;
+    
+    switch (op)
+    {
+        case'+':
+        cout<<num1+num2;
+        break;
+        
+        case'-':
+        cout<<num1-num2;
+        break;
+    
+        case'*':
+        cout<<num1*num2;
+        break;
+        
+        case'/':
+        cout<<num1/num2;
+        break;
+        
+        default:
+        // if operator is other than +,-,* or /,is invalid
+        cout<<"operator is invalid";
+        break;
+    }
+
+    return 0;
+}
